@@ -1,0 +1,9 @@
+2017/06/08 15:27:19 [E] [log.go:379] models/users/GetUserByEmail not find email:
+2017/06/08 15:40:13 [E] [log.go:379] users/call/UpsertUser read tcp 127.0.0.1:51709->127.0.0.1:8092: wsarecv: An existing connection was forcibly closed by the remote host.
+2017/06/08 15:40:13 [E] [log.go:379] models/users/GetAllUsers connection is shut down
+2017/06/08 15:40:13 [E] [log.go:379] users/call/UpsertUser connection is shut down
+2017/06/08 15:40:13 [E] [log.go:379] models/users/GetAllUsers connection is shut down
+2017/06/08 15:42:05 [E] [log.go:379] users/call/UpsertUser read tcp 127.0.0.1:51748->127.0.0.1:8092: wsarecv: An existing connection was forcibly closed by the remote host.
+2017/06/08 15:42:05 [E] [log.go:379] models/users/GetAllUsers connection is shut down
+2017/06/08 15:42:05 [E] [log.go:379] users/call/UpsertUser connection is shut down
+2017/06/08 15:42:05 [E] [log.go:379] models/users/GetAllUsers connection is shut down
