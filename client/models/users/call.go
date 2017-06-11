@@ -12,7 +12,7 @@ type UserClient struct{}
 
 var DefaultUserClient = new(UserClient)
 
-func (c *UserClient) GetAllUsers() {
+func (c *UserClient) GetAllUsers() []User {
 	var reply []User
 	err := RpcClient.Call("UserServer.AllInfos", nil, &reply)
 	utils.LogErr("models/users/GetAllUsers", err)
@@ -20,6 +20,7 @@ func (c *UserClient) GetAllUsers() {
 	for _, v := range reply {
 		fmt.Println(v)
 	}
+	return reply
 }
 
 func (c *UserClient) GetUserByEmail(email string) {
