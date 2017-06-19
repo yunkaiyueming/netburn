@@ -8,7 +8,7 @@ import (
 	"github.com/yunkaiyueming/netburn/utils"
 )
 
-func startService() {
+func StartService() {
 	serverConfig, err := utils.GetServerConfig()
 	if err != nil {
 		fmt.Sprintf("start service error:%s", err.Error())

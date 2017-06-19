@@ -6,10 +6,6 @@ import (
 
 var MgoSession *mgo.Session
 
-func init() {
-	MgoSession = GetDbConn()
-}
-
 func getMongoConf() string {
 	return ""
 }

@@ -23,15 +23,15 @@ func (c *UserClient) GetAllUsers() []User {
 	return reply
 }
 
-func (c *UserClient) GetUserByEmail(email string) {
+func (c *UserClient) GetUserByEmail(email string) User {
 	var reply User
 	err := RpcClient.Call("UserServer.GetInfoByEmail", email, &reply)
 	utils.LogErr("models/users/GetUserByEmail", err)
 
-	fmt.Println(reply)
+	return reply
 }
 
-func (c *UserClient) UpsertUser() {
+func (c *UserClient) UpsertUser() []User {
 	var ret bool
 	newUser := map[string]interface{}{
 		"email": "new@qq.com",
@@ -53,5 +53,5 @@ func (c *UserClient) UpsertUser() {
 	fmt.Println("======update=========")
 	err = RpcClient.Call("UserServer.UpsertUserInfo", updateUser, &ret)
 	utils.LogErr("users/call/UpsertUser", err)
-	c.GetAllUsers()
+	return c.GetAllUsers()
 }

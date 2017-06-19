@@ -16,7 +16,3 @@ func StartRpc() {
 		}
 	}
 }
-
-func init() {
-	StartRpc()
-}

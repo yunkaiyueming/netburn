@@ -1,11 +1,24 @@
 package main
 
 import (
-	_ "github.com/yunkaiyueming/netburn/client/service"
-	_ "github.com/yunkaiyueming/netburn/client/web"
+	"flag"
+	"fmt"
+
+	"github.com/yunkaiyueming/netburn/client/service"
+	"github.com/yunkaiyueming/netburn/client/web"
+	"github.com/yunkaiyueming/netburn/g"
 )
 
 func main() {
-	//config parse
-	//start service
+	flagParse()
+	service.StartRpc()
+	web.StartWebServer()
+}
+
+func flagParse() {
+	flag.Parse()
+	v := flag.Arg(0)
+	if v == "v" || v == "version" {
+		fmt.Println("the client version:" + g.CLIENT_VERSION)
+	}
 }

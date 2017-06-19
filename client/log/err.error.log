@@ -7,3 +7,34 @@
 2017/06/08 15:42:05 [E] [log.go:379] models/users/GetAllUsers connection is shut down
 2017/06/08 15:42:05 [E] [log.go:379] users/call/UpsertUser connection is shut down
 2017/06/08 15:42:05 [E] [log.go:379] models/users/GetAllUsers connection is shut down
+2017/06/13 17:05:10 [E] [log.go:379] models/cron/GetAllCrons read tcp 127.0.0.1:51454->127.0.0.1:8092: wsarecv: An existing connection was forcibly closed by the remote host.
+2017/06/13 17:05:11 [E] [log.go:379] models/cron/GetAllCrons connection is shut down
+2017/06/13 17:05:12 [E] [log.go:379] models/cron/GetAllCrons connection is shut down
+2017/06/13 17:05:12 [E] [log.go:379] models/cron/GetAllCrons connection is shut down
+2017/06/13 17:05:25 [E] [log.go:379] models/cron/GetAllCrons connection is shut down
+2017/06/13 17:05:26 [E] [log.go:379] models/cron/GetAllCrons connection is shut down
+2017/06/13 17:05:28 [E] [log.go:379] models/users/GetAllUsers connection is shut down
+2017/06/13 17:05:30 [E] [log.go:379] models/users/GetAllUsers connection is shut down
+2017/06/13 17:05:31 [E] [log.go:379] models/cron/GetAllCrons connection is shut down
+2017/06/13 17:43:34 [E] [log.go:379] models/cron/GetAllCrons connection is shut down
+2017/06/13 17:43:41 [E] [log.go:379] models/cron/GetAllCrons connection is shut down
+2017/06/13 17:44:01 [E] [log.go:379] models/cron/GetAllCrons connection is shut down
+2017/06/13 17:44:59 [E] [log.go:379] models/cron/GetAllCrons connection is shut down
+2017/06/13 17:44:59 [E] [log.go:379] models/cron/GetAllCrons connection is shut down
+2017/06/13 17:46:00 [E] [log.go:379] models/cron/GetAllCrons connection is shut down
+2017/06/13 17:46:01 [E] [log.go:379] models/cron/GetAllCrons connection is shut down
+2017/06/13 17:46:07 [E] [log.go:379] models/cron/GetAllCrons read tcp 127.0.0.1:52143->127.0.0.1:8092: wsarecv: An existing connection was forcibly closed by the remote host.
+2017/06/13 17:46:08 [E] [log.go:379] models/cron/GetAllCrons connection is shut down
+2017/06/13 17:50:11 [E] [log.go:379] models/cron/GetAllCrons connection is shut down
+2017/06/13 17:50:22 [E] [log.go:379] models/cron/GetAllCrons connection is shut down
+2017/06/13 17:50:31 [E] [log.go:379] models/cron/GetAllCrons connection is shut down
+2017/06/13 17:50:31 [E] [log.go:379] models/cron/GetAllCrons connection is shut down
+2017/06/13 17:50:32 [E] [log.go:379] models/cron/GetAllCrons connection is shut down
+2017/06/13 18:06:12 [E] [log.go:379] models/cron/GetAllCrons connection is shut down
+2017/06/13 18:06:21 [E] [log.go:379] models/cron/GetAllCrons connection is shut down
+2017/06/13 18:06:40 [E] [log.go:379] models/cron/GetAllCrons connection is shut down
+2017/06/13 18:06:51 [E] [log.go:379] models/cron/GetAllCrons connection is shut down
+2017/06/14 14:52:44 [E] [log.go:379] models/users/GetUserByEmail not find email:
+2017/06/14 14:52:48 [E] [log.go:379] models/users/GetUserByEmail not find email:qq.com
+2017/06/14 14:53:28 [E] [log.go:379] models/users/GetUserByEmail not find email:
+2017/06/16 16:46:15 [E] [log.go:379] models/users/GetUserByEmail not find email:

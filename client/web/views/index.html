@@ -4,10 +4,19 @@
 	<title>Lobby大厅</title>
 	</head>
 </html>
+
 <body>
-{{range .Apis}}
-	<li><a href="{{.Url}}"> {{.Desc}}</a></li>
-{{end}}
+	{{range $modelName:=.SortModles}}
+		{{$modelName}}
+		
+		{{range $k,$v:=$.ActionItems}}
+			{{if eq $k $modelName}} 
+				{{range $t:=$v}}<li>{{$t.Id}} &nbsp;&nbsp;&nbsp;<a href="{{$t.Url}}">{{$t.Desc}}</a></li>{{end}}
+		 	{{end}}	
+		{{end}}<br>
+		
+	{{end}}
 </body>
 </html>
+
 

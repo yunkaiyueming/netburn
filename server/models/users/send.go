@@ -62,3 +62,7 @@ func (s *UserServer) UpsertUserInfo(data map[string]interface{}, ret *bool) erro
 	defaultUsers = append(defaultUsers, tmpUser)
 	return nil
 }
+
+func GetDefaultUsers() []User {
+	return defaultUsers
+}

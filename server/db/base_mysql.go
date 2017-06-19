@@ -25,7 +25,7 @@ func initAllDB() error {
 }
 
 func registerDB(name string) error {
-	cf, err := config.NewConfig("ini", "../db.conf")
+	cf, err := config.NewConfig("ini", "./conf/db.conf")
 	if err != nil {
 		return err
 	}
@@ -40,4 +40,10 @@ func registerDB(name string) error {
 	}
 	orm.RegisterDataBase(name, "mysql", mysqlCf[name])
 	return nil
+}
+
+func getOrm(name string) orm.Ormer {
+	o := orm.NewOrm()
+	o.Using(name)
+	return o
 }

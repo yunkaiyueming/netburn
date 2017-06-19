@@ -1,6 +1,8 @@
 package g
 
 const (
-	ERR_OK    int = 0
-	ERR_WRONG int = 1
+	CLIENT_VERSION = "0.1.0"
+	SERVER_VERSION = "0.1.1"
+	ERR_OK         = 0
+	ERR_WRONG      = 1
 )
