@@ -25,6 +25,14 @@ func GetWebServerConfig() (map[string]string, error) {
 	return cf.GetSection("client")
 }
 
+func GetMgoConfig() (map[string]string, error) {
+	cf, err := config.NewConfig("ini", "./conf/db.conf")
+	if err != nil {
+		return nil, err
+	}
+	return cf.GetSection("mongo")
+}
+
 func GetActionConfig() (map[string][]ActionItems, []string) {
 	cf, err := config.NewConfig("ini", "./config/action.conf")
 	if err != nil {

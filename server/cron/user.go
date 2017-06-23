@@ -9,7 +9,7 @@ import (
 )
 
 func CronUserLand() {
-	CreateCronJob(30*time.Second, userLand, "CronUserLand")
+	CreateCronJob(30*time.Minute, userLand, "CronUserLand")
 }
 
 func userLand() string {

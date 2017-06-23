@@ -7,6 +7,8 @@ import (
 	"net/http"
 
 	"github.com/yunkaiyueming/netburn/client/models/cron"
+	"github.com/yunkaiyueming/netburn/client/models/hfile"
+	"github.com/yunkaiyueming/netburn/client/models/slog"
 	"github.com/yunkaiyueming/netburn/client/models/users"
 	"github.com/yunkaiyueming/netburn/utils"
 )
@@ -24,6 +26,18 @@ func Router() {
 
 	//cron
 	http.HandleFunc("/cron/list", HandleAllCron)
+
+	//hfile
+	http.HandleFunc("/hfile/all_bucket_files", HandleAllBucketsFiles)
+	http.HandleFunc("/hfile/get_bucket_files", HandleGetBucketFiles)
+	http.HandleFunc("/hfile/get_bucket_names", HandleGetBucketNames)
+	http.HandleFunc("/hfile/get_file_msg", HandleGetFileMsg)
+
+	//slog
+	http.HandleFunc("/slog/app_list", HandleAppList)
+	http.HandleFunc("/slog/app_by_name", HandleAppByName)
+	http.HandleFunc("/slog/log_by_app", HandleLogByApp)
+
 }
 
 //==============Lobby===========================
@@ -101,5 +115,88 @@ func errorHandler(w http.ResponseWriter, r *http.Request, status int) {
 	w.WriteHeader(status)
 	if status == http.StatusNotFound {
 		Handle404(w, r)
+	}
+}
+
+//==============Hfile===========================
+func HandleAllBucketsFiles(w http.ResponseWriter, r *http.Request) {
+	rets := hfile.DefaultHfileClient.AllBucketsFiles()
+	ret, err := json.Marshal(rets)
+	if err != nil {
+		w.Write([]byte(err.Error()))
+	} else {
+		w.Write(ret)
+	}
+}
+
+func HandleGetBucketFiles(w http.ResponseWriter, r *http.Request) {
+	r.ParseForm()
+	bucketName := r.FormValue("bucket_name")
+
+	rets := hfile.DefaultHfileClient.GetBucketFiles(bucketName)
+	ret, err := json.Marshal(rets)
+	if err != nil {
+		w.Write([]byte(err.Error()))
+	} else {
+		w.Write(ret)
+	}
+}
+
+func HandleGetBucketNames(w http.ResponseWriter, r *http.Request) {
+	rets := hfile.DefaultHfileClient.GetBucketNames()
+	ret, err := json.Marshal(rets)
+	if err != nil {
+		w.Write([]byte(err.Error()))
+	} else {
+		w.Write(ret)
+	}
+}
+
+func HandleGetFileMsg(w http.ResponseWriter, r *http.Request) {
+	r.ParseForm()
+	bucketName := r.FormValue("bucket_name")
+	key := r.FormValue("key")
+
+	rets := hfile.DefaultHfileClient.GetFileMsg(bucketName, key)
+	ret, err := json.Marshal(rets)
+	if err != nil {
+		w.Write([]byte(err.Error()))
+	} else {
+		w.Write(ret)
+	}
+}
+
+//==============Slog===========================
+func HandleAppList(w http.ResponseWriter, r *http.Request) {
+	ret := slog.DefaultSlogClient.GetApps()
+	json, err := json.Marshal(ret)
+	if err != nil {
+		w.Write([]byte(err.Error()))
+	} else {
+		w.Write(json)
+	}
+}
+
+func HandleAppByName(w http.ResponseWriter, r *http.Request) {
+	r.ParseForm()
+	appName := r.FormValue("app_name")
+	ret := slog.DefaultSlogClient.GetAppByName(appName)
+	json, err := json.Marshal(ret)
+	if err != nil {
+		w.Write([]byte(err.Error()))
+	} else {
+		w.Write(json)
+	}
+}
+
+func HandleLogByApp(w http.ResponseWriter, r *http.Request) {
+	r.ParseForm()
+	appName := r.FormValue("app_name")
+	ret := slog.DefaultSlogClient.GetAppLog(appName)
+	json, err := json.Marshal(ret)
+	if err != nil {
+		w.Write([]byte(err.Error()))
+	} else {
+		w.Write(json)
 	}
 }

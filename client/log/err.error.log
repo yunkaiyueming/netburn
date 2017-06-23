@@ -38,3 +38,55 @@
 2017/06/14 14:52:48 [E] [log.go:379] models/users/GetUserByEmail not find email:qq.com
 2017/06/14 14:53:28 [E] [log.go:379] models/users/GetUserByEmail not find email:
 2017/06/16 16:46:15 [E] [log.go:379] models/users/GetUserByEmail not find email:
+2017/06/22 16:36:24 [E] [log.go:379] HFileClient/GetBucketFiles rpc: can't find service HfileServer.GetBucketFiles
+2017/06/22 16:37:47 [E] [log.go:379] HFileClient/GetBucketFiles rpc: can't find service HfileServer.GetBucketFiles
+2017/06/22 16:37:53 [E] [log.go:379] HFileClient/GetBucketFiles rpc: can't find service HfileServer.GetBucketFiles
+2017/06/22 16:37:56 [E] [log.go:379] HFileClient/GetBucketFiles rpc: can't find service HfileServer.GetBucketFiles
+2017/06/22 16:37:59 [E] [log.go:379] HFileClient/GetBucketFiles rpc: can't find service HfileServer.GetBucketFiles
+2017/06/22 16:38:10 [E] [log.go:379] HFileClient/GetBucketFiles rpc: can't find service HfileServer.GetBucketFiles
+2017/06/22 16:38:11 [E] [log.go:379] HFileClient/GetBucketFiles rpc: can't find service HfileServer.GetBucketFiles
+2017/06/22 16:38:11 [E] [log.go:379] HFileClient/GetBucketFiles rpc: can't find service HfileServer.GetBucketFiles
+2017/06/22 16:38:12 [E] [log.go:379] HFileClient/GetBucketFiles rpc: can't find service HfileServer.GetBucketFiles
+2017/06/22 16:39:31 [E] [log.go:379] HFileClient/GetBucketFiles rpc: can't find service HfileServer.GetBucketFiles
+2017/06/22 16:40:15 [E] [log.go:379] HFileClient/GetBucketFiles rpc: can't find service HfileServer.GetBucketNames
+2017/06/22 16:40:18 [E] [log.go:379] HFileClient/GetBucketFiles rpc: can't find service HfileServer.GetBucketNames
+2017/06/22 16:40:20 [E] [log.go:379] HFileClient/GetBucketFiles rpc: can't find service HfileServer.GetFileMsg
+2017/06/22 16:40:23 [E] [log.go:379] HFileClient/GetBucketFiles rpc: can't find service HfileServer.GetBucketNames
+2017/06/22 16:46:14 [E] [log.go:379] HFileClient/GetBucketFiles rpc: can't find service HfileServer.GetBucketFiles
+2017/06/22 16:46:25 [E] [log.go:379] HFileClient/GetBucketFiles rpc: can't find service HfileServer.GetBucketFiles
+2017/06/22 16:49:02 [E] [log.go:379] HFileClient/GetBucketFiles rpc: can't find service HfileServer.GetBucketFiles
+2017/06/22 16:50:00 [E] [log.go:379] HFileClient/GetBucketFiles rpc: can't find service HfileServer.GetBucketFiles
+2017/06/22 16:53:38 [E] [log.go:379] HFileClient/GetBucketFiles rpc: can't find service HfileServer.GetBucketFiles
+2017/06/22 16:53:42 [E] [log.go:379] HFileClient/GetBucketFiles rpc: can't find service HfileServer.GetBucketFiles
+2017/06/22 16:53:48 [E] [log.go:379] HFileClient/GetBucketFiles rpc: can't find service HfileServer.GetBucketFiles
+2017/06/22 16:53:52 [E] [log.go:379] HFileClient/GetBucketFiles rpc: can't find service HfileServer.GetBucketFiles
+2017/06/22 16:53:55 [E] [log.go:379] HFileClient/GetBucketFiles rpc: can't find service HfileServer.GetBucketFiles
+2017/06/22 16:53:56 [E] [log.go:379] HFileClient/GetBucketFiles rpc: can't find service HfileServer.GetBucketFiles
+2017/06/22 16:53:57 [E] [log.go:379] HFileClient/GetBucketFiles rpc: can't find service HfileServer.GetBucketFiles
+2017/06/22 16:56:01 [E] [log.go:379] HFileClient/GetBucketFiles rpc: can't find service HfileServer.GetBucketFiles
+2017/06/22 16:58:17 [E] [log.go:379] HFileClient/GetBucketFiles rpc: can't find service HfileServer.GetBucketFiles
+2017/06/22 16:58:25 [E] [log.go:379] HFileClient/GetBucketFiles rpc: can't find service HfileServer.GetBucketFiles
+2017/06/22 16:59:38 [E] [log.go:379] HFileClient/GetBucketFiles invalid error <nil>
+2017/06/22 16:59:57 [E] [log.go:379] HFileClient/GetBucketFiles connection is shut down
+2017/06/22 17:00:08 [E] [log.go:379] HFileClient/GetBucketFiles connection is shut down
+2017/06/22 17:00:22 [E] [log.go:379] HFileClient/GetBucketFiles connection is shut down
+2017/06/22 17:00:33 [E] [log.go:379] HFileClient/GetBucketFiles connection is shut down
+2017/06/22 17:00:41 [E] [log.go:379] HFileClient/GetBucketFiles connection is shut down
+2017/06/22 17:02:27 [E] [log.go:379] HFileClient/GetFileMsg invalid error <nil>
+2017/06/22 17:03:34 [E] [log.go:379] HFileClient/GetFileMsg connection is shut down
+2017/06/22 17:04:34 [E] [log.go:379] HFileClient/GetFileMsg connection is shut down
+2017/06/22 17:06:03 [E] [log.go:379] HFileClient/GetFileMsg connection is shut down
+2017/06/22 17:06:16 [E] [log.go:379] HFileClient/GetFileMsg connection is shut down
+2017/06/22 17:08:15 [E] [log.go:379] HFileClient/GetFileMsg connection is shut down
+2017/06/23 11:49:50 [E] [log.go:379] SlogClient/GetApps read tcp 127.0.0.1:62177->127.0.0.1:8092: wsarecv: An existing connection was forcibly closed by the remote host.
+2017/06/23 11:50:56 [E] [log.go:379] SlogClient/GetApps connection is shut down
+2017/06/23 11:51:12 [E] [log.go:379] SlogClient/GetApps connection is shut down
+2017/06/23 11:51:12 [E] [log.go:379] SlogClient/GetApps connection is shut down
+2017/06/23 11:51:13 [E] [log.go:379] SlogClient/GetApps connection is shut down
+2017/06/23 11:51:16 [E] [log.go:379] SlogClient/GetApps connection is shut down
+2017/06/23 11:52:07 [E] [log.go:379] SlogClient/GetApps connection is shut down
+2017/06/23 11:52:10 [E] [log.go:379] SlogClient/GetApps connection is shut down
+2017/06/23 11:53:06 [E] [log.go:379] SlogClient/GetApps connection is shut down
+2017/06/23 11:53:09 [E] [log.go:379] SlogClient/GetApps connection is shut down
+2017/06/23 11:55:35 [E] [log.go:379] SlogClient/GetApps read tcp 127.0.0.1:62319->127.0.0.1:8092: wsarecv: An existing connection was forcibly closed by the remote host.
+2017/06/23 11:55:38 [E] [log.go:379] SlogClient/GetApps connection is shut down

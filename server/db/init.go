@@ -12,8 +12,7 @@ func init() {
 	}
 
 	//mgo conn
-	//MgoSession = GetDbConn()
+	initMgoConn()
 
 	//redis conn
-
 }

@@ -9,16 +9,16 @@ import (
 	"github.com/yunkaiyueming/netburn/g"
 )
 
-func main() {
-	flagParse()
-	service.StartRpc()
-	web.StartWebServer()
-}
-
 func flagParse() {
 	flag.Parse()
 	v := flag.Arg(0)
 	if v == "v" || v == "version" {
 		fmt.Println("the client version:" + g.CLIENT_VERSION)
 	}
+}
+
+func main() {
+	flagParse()
+	service.StartRpc()
+	web.StartWebServer()
 }

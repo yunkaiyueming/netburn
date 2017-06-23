@@ -6,15 +6,15 @@ import (
 )
 
 func CronTest1() {
-	CreateCronJob(1*time.Minute, test1, "CronTest1")
+	CreateCronJob(5*time.Minute, test1, "CronTest1")
 }
 
 func CronTest2() {
-	CreateCronJob(20*time.Second, test2, "CronTest2")
+	CreateCronJob(15*time.Minute, test2, "CronTest2")
 }
 
 func CronTest3() {
-	CreateCronJob(25*time.Second, test3, "CronTest3")
+	CreateCronJob(10*time.Minute, test3, "CronTest3")
 }
 
 func test1() string {

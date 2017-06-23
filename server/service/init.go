@@ -16,7 +16,7 @@ func StartService() {
 	}
 
 	address := fmt.Sprintf("%s:%s", serverConfig["host"], serverConfig["port"])
-	fmt.Println(address)
+	fmt.Println("rpc server start: ", address)
 
 	tcpAddr, err := net.ResolveTCPAddr("tcp", address)
 	utils.LogErr("%s,%s", err)

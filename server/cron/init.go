@@ -45,7 +45,7 @@ func CreateCronJob(d time.Duration, f func() string, name string) {
 			ret := f()
 			jobs.UpdateCronByName(name, nextStarTime, "false")
 
-			logs.Alert(fmt.Sprintf("fanme:%v,end_time:%s,ret:%s\n", fName, t.Format("2006-01-02 15:04:05")), ret)
+			logs.Alert(fmt.Sprintf("fanme:%v,end_time:%s,ret:%s\n", fName, t.Format("2006-01-02 15:04:05"), ret))
 			runLock = false
 		}
 	}

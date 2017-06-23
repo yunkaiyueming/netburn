@@ -1,10 +1,12 @@
 package hfile
 
 import (
+	"fmt"
+
 	. "github.com/yunkaiyueming/netburn/g"
 )
 
-type HfielServer struct{}
+type HfileServer struct{}
 
 type BucketItem map[string][]HFile
 
@@ -26,29 +28,30 @@ var defaultBucketGit = BucketItem{
 	},
 }
 
-func (h *HfielServer) GetBucketFiles(bucketName string, items *[]HFile) error {
+func (h *HfileServer) GetBucketFiles(bucketName string, output *[]HFile) error {
 	if ret, ok := defaultBucketGit[bucketName]; ok {
-		*items = ret
+		*output = ret
 	} else {
-		*items = nil
+		*output = nil
 	}
 	return nil
 }
 
-func (h *HfielServer) GetBucketNames(input interface{}, output *[]string) error {
+func (h *HfileServer) GetBucketNames(input interface{}, output *[]string) error {
 	for name, _ := range defaultBucketGit {
 		*output = append(*output, name)
 	}
 	return nil
 }
 
-func (h *HfielServer) GetAllBucketsFiles(input interface{}, output *interface{}) error {
+func (h *HfileServer) GetAllBucketsFiles(input interface{}, output *interface{}) error {
 	*output = defaultBucketGit
 	return nil
 }
 
-func (h *HfielServer) GetFileMsg(input map[string]string, output *interface{}) error {
+func (h *HfileServer) GetFileMsg(input map[string]string, output *interface{}) error {
 	items := defaultBucketGit[input["bucket_name"]]
+	fmt.Println(input)
 	for _, item := range items {
 		if item.Key == input["key"] {
 			*output = item
