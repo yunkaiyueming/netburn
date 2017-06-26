@@ -54,7 +54,7 @@ func (this *ModelBase) UpsertBatch(db, table string, data []map[string]interface
 		sql := getUpsertSql(table, filted, onlyUpdateKeys, fields)
 		//		fmt.Println(sql)
 
-		getOrm(db).Raw(sql).Exec()
+		GetOrm(db).Raw(sql).Exec()
 	}
 
 	return true

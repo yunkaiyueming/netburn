@@ -1,22 +1,25 @@
 package db
 
 import (
+	"fmt"
+
 	"github.com/astaxie/beego/config"
 	"github.com/astaxie/beego/orm"
 	_ "github.com/go-sql-driver/mysql"
 )
 
-func initORM() (err error) {
+func initORM() {
+	var err error
 	orm.RegisterDriver("mysql", orm.DRMySQL)
 	if err = registerDB("default"); err != nil {
-		return
+		fmt.Println("mysql conn error：", err.Error())
+		panic(err)
 	}
 
 	if err = initAllDB(); err != nil {
-		return
+		fmt.Println("mysql conn error：", err.Error())
+		panic(err)
 	}
-
-	return nil
 }
 
 //注册其他所有库
@@ -42,7 +45,7 @@ func registerDB(name string) error {
 	return nil
 }
 
-func getOrm(name string) orm.Ormer {
+func GetOrm(name string) orm.Ormer {
 	o := orm.NewOrm()
 	o.Using(name)
 	return o

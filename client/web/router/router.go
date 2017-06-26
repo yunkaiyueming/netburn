@@ -6,6 +6,7 @@ import (
 	"html/template"
 	"net/http"
 
+	"github.com/yunkaiyueming/netburn/client/models/cache"
 	"github.com/yunkaiyueming/netburn/client/models/cron"
 	"github.com/yunkaiyueming/netburn/client/models/hfile"
 	"github.com/yunkaiyueming/netburn/client/models/slog"
@@ -38,6 +39,8 @@ func Router() {
 	http.HandleFunc("/slog/app_by_name", HandleAppByName)
 	http.HandleFunc("/slog/log_by_app", HandleLogByApp)
 
+	//cache
+	http.HandleFunc("/cache/hot_data", HandleGetHotData)
 }
 
 //==============Lobby===========================
@@ -193,6 +196,17 @@ func HandleLogByApp(w http.ResponseWriter, r *http.Request) {
 	r.ParseForm()
 	appName := r.FormValue("app_name")
 	ret := slog.DefaultSlogClient.GetAppLog(appName)
+	json, err := json.Marshal(ret)
+	if err != nil {
+		w.Write([]byte(err.Error()))
+	} else {
+		w.Write(json)
+	}
+}
+
+//==============Cache===========================
+func HandleGetHotData(w http.ResponseWriter, r *http.Request) {
+	ret := cache.DefaultCacheClient.GetHotData()
 	json, err := json.Marshal(ret)
 	if err != nil {
 		w.Write([]byte(err.Error()))

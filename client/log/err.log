@@ -90,3 +90,5 @@
 2017/06/23 11:53:09 [E] [log.go:379] SlogClient/GetApps connection is shut down
 2017/06/23 11:55:35 [E] [log.go:379] SlogClient/GetApps read tcp 127.0.0.1:62319->127.0.0.1:8092: wsarecv: An existing connection was forcibly closed by the remote host.
 2017/06/23 11:55:38 [E] [log.go:379] SlogClient/GetApps connection is shut down
+2017/06/26 12:01:54 [E] [log.go:379] SlogClient/GetApps rpc: can't find service CacheServer.GetHotData
+2017/06/26 12:02:03 [E] [log.go:379] SlogClient/GetApps rpc: can't find service CacheServer.GetHotData

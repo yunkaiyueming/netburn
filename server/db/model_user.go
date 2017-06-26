@@ -25,6 +25,6 @@ func (u *UserModel) UpdateUserByEmail(table, email string, data map[string]inter
 	sql = fmt.Sprintf("UPDATE %s SET %s", table, sql)
 	updateSql := sql[0 : len(sql)-1]
 	fmt.Println(updateSql)
-	_, err := getOrm("default").Raw(updateSql).Exec()
+	_, err := GetOrm("default").Raw(updateSql).Exec()
 	return err
 }
