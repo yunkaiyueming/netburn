@@ -4,7 +4,6 @@ import (
 	"fmt"
 
 	. "github.com/yunkaiyueming/netburn/client/service"
-	//. "github.com/yunkaiyueming/netburn/g"
 	"github.com/yunkaiyueming/netburn/utils"
 )
 

@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "io.grpc.examples.g";
+option java_outer_classname = "WelcomeProto";
+
+package welcome;
+
+// The greeting service definition.
+service Welcome {
+  // Sends a greeting
+  rpc SayWel (FromRequest) returns (ToReply) {}
+}
+
+// The request message containing the user's name.
+message FromRequest {
+  string name = 1;
+}
+
+message Weather {
+	string sourth =1;
+	string date = 2;
+}
+
+// The response message containing the greetings
+message ToReply {
+  string messages = 1;
+  Weather we =2;
+}

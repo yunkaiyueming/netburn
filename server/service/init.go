@@ -16,7 +16,7 @@ func StartService() {
 	}
 
 	address := fmt.Sprintf("%s:%s", serverConfig["host"], serverConfig["port"])
-	fmt.Println("rpc server start: ", address)
+	fmt.Println("rpc server start ===> ", address)
 
 	tcpAddr, err := net.ResolveTCPAddr("tcp", address)
 	utils.LogErr("%s,%s", err)
@@ -28,6 +28,8 @@ func StartService() {
 		if err != nil {
 			continue
 		}
+
+		fmt.Printf("%s connected %s \n", conn.RemoteAddr().String(), conn.LocalAddr().String())
 		go jsonrpc.ServeConn(conn)
 	}
 }

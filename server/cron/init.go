@@ -31,21 +31,21 @@ func CreateCronJob(d time.Duration, f func() string, name string) {
 	}
 	jobs.AddJob(newJob)
 
+	pc, _, _, _ := runtime.Caller(1)
+	fName := runtime.FuncForPC(pc).Name()
 	for {
-		t := <-Ticker.C
+		<-Ticker.C
 		if !runLock {
 			runLock = true
 
-			pc, _, _, _ := runtime.Caller(1)
-			fName := runtime.FuncForPC(pc).Name()
-			logs.Alert(fmt.Sprintf("fname:%v,start_time:%s\n", fName, t.Format("2006-01-02 15:04:05")))
+			logs.Alert(fmt.Sprintf("fname:%v,start_time:%s\n", fName, time.Now().Format("2006-01-02 15:04:05")))
 
 			nextStarTime := time.Unix(time.Now().Unix()+int64(d.Seconds()), 0).Format("2006-01-02 15:04:05")
 			jobs.UpdateCronByName(name, nextStarTime, "true")
 			ret := f()
 			jobs.UpdateCronByName(name, nextStarTime, "false")
 
-			logs.Alert(fmt.Sprintf("fanme:%v,end_time:%s,ret:%s\n", fName, t.Format("2006-01-02 15:04:05"), ret))
+			logs.Alert(fmt.Sprintf("fanme:%v,end_time:%s,ret:%s\n", fName, time.Now().Format("2006-01-02 15:04:05"), ret))
 			runLock = false
 		}
 	}

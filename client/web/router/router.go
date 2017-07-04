@@ -6,9 +6,11 @@ import (
 	"html/template"
 	"net/http"
 
+	"github.com/yunkaiyueming/netburn/client/models/analyze"
 	"github.com/yunkaiyueming/netburn/client/models/cache"
 	"github.com/yunkaiyueming/netburn/client/models/cron"
 	"github.com/yunkaiyueming/netburn/client/models/hfile"
+	"github.com/yunkaiyueming/netburn/client/models/pb"
 	"github.com/yunkaiyueming/netburn/client/models/slog"
 	"github.com/yunkaiyueming/netburn/client/models/users"
 	"github.com/yunkaiyueming/netburn/utils"
@@ -41,6 +43,13 @@ func Router() {
 
 	//cache
 	http.HandleFunc("/cache/hot_data", HandleGetHotData)
+
+	//analyze
+	http.HandleFunc("/analyze/go_env", HandleGoEnv)
+
+	//pb
+	http.HandleFunc("/pb/greet", HandleGreet)
+	http.HandleFunc("/pb/welcome", HandleWelcome)
 }
 
 //==============Lobby===========================
@@ -207,6 +216,38 @@ func HandleLogByApp(w http.ResponseWriter, r *http.Request) {
 //==============Cache===========================
 func HandleGetHotData(w http.ResponseWriter, r *http.Request) {
 	ret := cache.DefaultCacheClient.GetHotData()
+	json, err := json.Marshal(ret)
+	if err != nil {
+		w.Write([]byte(err.Error()))
+	} else {
+		w.Write(json)
+	}
+}
+
+//==============Analyze===========================
+func HandleGoEnv(w http.ResponseWriter, r *http.Request) {
+	ret := analyze.DefaultAnalyzeModel.GoEnv()
+	json, err := json.Marshal(ret)
+	if err != nil {
+		w.Write([]byte(err.Error()))
+	} else {
+		w.Write(json)
+	}
+}
+
+//==============Pb================================
+func HandleGreet(w http.ResponseWriter, r *http.Request) {
+	ret := pb.GreetCall()
+	json, err := json.Marshal(ret)
+	if err != nil {
+		w.Write([]byte(err.Error()))
+	} else {
+		w.Write(json)
+	}
+}
+
+func HandleWelcome(w http.ResponseWriter, r *http.Request) {
+	ret := pb.WelCall()
 	json, err := json.Marshal(ret)
 	if err != nil {
 		w.Write([]byte(err.Error()))

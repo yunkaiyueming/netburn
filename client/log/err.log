@@ -92,3 +92,66 @@
 2017/06/23 11:55:38 [E] [log.go:379] SlogClient/GetApps connection is shut down
 2017/06/26 12:01:54 [E] [log.go:379] SlogClient/GetApps rpc: can't find service CacheServer.GetHotData
 2017/06/26 12:02:03 [E] [log.go:379] SlogClient/GetApps rpc: can't find service CacheServer.GetHotData
+2017/06/29 17:20:57 [E] [log.go:379] HFileClient/AllBucketsFiles rpc: can't find service HfielServer.GetAllBucketsFiles
+2017/06/29 17:21:06 [E] [log.go:379] models/users/GetUserByEmail not find email:
+2017/06/29 17:26:10 [E] [log.go:379] HFileClient/AllBucketsFiles rpc: can't find service HfielServer.GetAllBucketsFiles
+2017/06/29 17:27:23 [E] [log.go:379] HFileClient/GetBucketFiles invalid error <nil>
+2017/06/29 17:27:25 [E] [log.go:379] HFileClient/GetBucketFiles connection is shut down
+2017/06/29 17:27:26 [E] [log.go:379] HFileClient/GetBucketFiles connection is shut down
+2017/06/29 17:30:54 [E] [log.go:379] HFileClient/AllBucketsFiles rpc: can't find service HfielServer.GetAllBucketsFiles
+2017/06/29 17:30:55 [E] [log.go:379] HFileClient/AllBucketsFiles rpc: can't find service HfielServer.GetAllBucketsFiles
+2017/06/29 17:30:56 [E] [log.go:379] HFileClient/AllBucketsFiles rpc: can't find service HfielServer.GetAllBucketsFiles
+2017/06/29 17:33:00 [E] [log.go:379] HFileClient/AllBucketsFiles rpc: can't find service HfielServer.GetAllBucketsFiles
+2017/06/29 17:33:01 [E] [log.go:379] HFileClient/AllBucketsFiles rpc: can't find service HfielServer.GetAllBucketsFiles
+2017/06/29 17:33:12 [E] [log.go:379] HFileClient/AllBucketsFiles connection is shut down
+2017/06/29 17:33:13 [E] [log.go:379] HFileClient/AllBucketsFiles connection is shut down
+2017/06/29 17:33:13 [E] [log.go:379] HFileClient/AllBucketsFiles connection is shut down
+2017/06/29 17:33:39 [E] [log.go:379] HFileClient/AllBucketsFiles rpc: can't find service HfielServer.GetAllBucketsFiles
+2017/06/29 17:33:39 [E] [log.go:379] HFileClient/AllBucketsFiles rpc: can't find service HfielServer.GetAllBucketsFiles
+2017/06/29 17:33:39 [E] [log.go:379] HFileClient/AllBucketsFiles rpc: can't find service HfielServer.GetAllBucketsFiles
+2017/06/29 17:33:43 [E] [log.go:379] models/users/GetUserByEmail not find email:
+2017/06/29 17:33:48 [E] [log.go:379] HFileClient/AllBucketsFiles rpc: can't find service HfielServer.GetAllBucketsFiles
+2017/06/29 17:33:53 [E] [log.go:379] HFileClient/GetBucketFiles invalid error <nil>
+2017/06/29 17:33:55 [E] [log.go:379] HFileClient/GetBucketFiles connection is shut down
+2017/06/29 17:33:59 [E] [log.go:379] HFileClient/GetBucketFiles connection is shut down
+2017/06/29 17:34:01 [E] [log.go:379] HFileClient/GetBucketFiles connection is shut down
+2017/06/29 17:34:02 [E] [log.go:379] HFileClient/GetBucketFiles connection is shut down
+2017/06/29 17:34:06 [E] [log.go:379] HFileClient/GetFileMsg connection is shut down
+2017/06/29 17:34:08 [E] [log.go:379] HFileClient/GetBucketNames connection is shut down
+2017/06/29 17:34:10 [E] [log.go:379] HFileClient/GetBucketNames connection is shut down
+2017/06/29 17:34:12 [E] [log.go:379] HFileClient/GetBucketNames connection is shut down
+2017/06/29 17:34:13 [E] [log.go:379] HFileClient/GetBucketFiles connection is shut down
+2017/06/29 17:34:15 [E] [log.go:379] HFileClient/AllBucketsFiles connection is shut down
+2017/06/29 17:34:19 [E] [log.go:379] models/cron/GetAllCrons connection is shut down
+2017/06/29 17:34:21 [E] [log.go:379] models/cron/GetAllCrons connection is shut down
+2017/06/29 17:34:21 [E] [log.go:379] models/cron/GetAllCrons connection is shut down
+2017/06/29 17:34:22 [E] [log.go:379] models/cron/GetAllCrons connection is shut down
+2017/06/29 17:34:24 [E] [log.go:379] models/cron/GetAllCrons connection is shut down
+2017/06/29 17:34:25 [E] [log.go:379] models/cron/GetAllCrons connection is shut down
+2017/06/29 17:34:25 [E] [log.go:379] models/cron/GetAllCrons connection is shut down
+2017/06/29 17:37:16 [E] [log.go:379] HFileClient/AllBucketsFiles rpc: can't find service HfielServer.GetAllBucketsFiles
+2017/06/29 17:38:07 [E] [log.go:379] HFileClient/AllBucketsFiles rpc: can't find service HfielServer.GetAllBucketsFiles
+2017/06/29 17:38:11 [E] [log.go:379] SlogClient/GetApps read tcp 127.0.0.1:54703->127.0.0.1:8092: wsarecv: An existing connection was forcibly closed by the remote host.
+2017/06/29 17:38:15 [E] [log.go:379] models/users/GetUserByEmail connection is shut down
+2017/06/29 17:38:17 [E] [log.go:379] users/call/UpsertUser connection is shut down
+2017/06/29 17:38:17 [E] [log.go:379] models/users/GetAllUsers connection is shut down
+2017/06/29 17:38:17 [E] [log.go:379] users/call/UpsertUser connection is shut down
+2017/06/29 17:38:17 [E] [log.go:379] models/users/GetAllUsers connection is shut down
+2017/06/29 17:38:18 [E] [log.go:379] models/cron/GetAllCrons connection is shut down
+2017/06/29 17:38:19 [E] [log.go:379] models/cron/GetAllCrons connection is shut down
+2017/06/29 17:38:21 [E] [log.go:379] models/cron/GetAllCrons connection is shut down
+2017/06/29 17:38:21 [E] [log.go:379] models/cron/GetAllCrons connection is shut down
+2017/06/29 17:38:21 [E] [log.go:379] models/cron/GetAllCrons connection is shut down
+2017/06/29 17:38:21 [E] [log.go:379] models/cron/GetAllCrons connection is shut down
+2017/06/29 17:38:22 [E] [log.go:379] models/cron/GetAllCrons connection is shut down
+2017/06/29 17:38:22 [E] [log.go:379] models/cron/GetAllCrons connection is shut down
+2017/06/29 17:38:32 [E] [log.go:379] models/cron/GetAllCrons connection is shut down
+2017/06/29 17:38:33 [E] [log.go:379] models/cron/GetAllCrons connection is shut down
+2017/06/29 17:38:33 [E] [log.go:379] models/cron/GetAllCrons connection is shut down
+2017/06/29 17:39:21 [E] [log.go:379] HFileClient/AllBucketsFiles rpc: can't find service HfielServer.GetAllBucketsFiles
+2017/06/29 17:39:23 [E] [log.go:379] HFileClient/AllBucketsFiles rpc: can't find service HfielServer.GetAllBucketsFiles
+2017/06/29 17:39:23 [E] [log.go:379] HFileClient/AllBucketsFiles rpc: can't find service HfielServer.GetAllBucketsFiles
+2017/06/29 17:39:23 [E] [log.go:379] HFileClient/AllBucketsFiles rpc: can't find service HfielServer.GetAllBucketsFiles
+2017/06/29 17:39:24 [E] [log.go:379] HFileClient/AllBucketsFiles rpc: can't find service HfielServer.GetAllBucketsFiles
+2017/06/29 17:39:24 [E] [log.go:379] HFileClient/AllBucketsFiles rpc: can't find service HfielServer.GetAllBucketsFiles
+2017/06/30 14:08:13 [E] [log.go:379] HFileClient/GetBucketNames connection is shut down

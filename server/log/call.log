@@ -18734,3 +18734,49 @@
 
 2017/06/16 20:42:32 [A] [???:0] fanme:github.com/yunkaiyueming/netburn/server/cron.CronUserLand,end_time:2017-06-16 20:42:32,ret:%!!(string=ret==>userLand/UpsertBatch:true)s(MISSING)
 
+2017/06/29 17:54:35 [A] [???:0] fname:github.com/yunkaiyueming/netburn/server/cron.CronTest1,start_time:2017-06-29 17:54:35
+
+2017/06/29 17:54:35 [A] [???:0] fanme:github.com/yunkaiyueming/netburn/server/cron.CronTest1,end_time:2017-06-29 17:54:35,ret:test1 cron run
+
+2017/06/29 17:59:35 [A] [???:0] fname:github.com/yunkaiyueming/netburn/server/cron.CronTest3,start_time:2017-06-29 17:59:35
+
+2017/06/29 17:59:35 [A] [???:0] fanme:github.com/yunkaiyueming/netburn/server/cron.CronTest3,end_time:2017-06-29 17:59:35,ret:test3 cron run
+
+2017/06/29 17:59:35 [A] [???:0] fname:github.com/yunkaiyueming/netburn/server/cron.CronTest1,start_time:2017-06-29 17:59:35
+
+2017/06/29 17:59:35 [A] [???:0] fanme:github.com/yunkaiyueming/netburn/server/cron.CronTest1,end_time:2017-06-29 17:59:35,ret:test1 cron run
+
+2017/06/29 18:04:35 [A] [???:0] fname:github.com/yunkaiyueming/netburn/server/cron.CronTest2,start_time:2017-06-29 18:04:35
+
+2017/06/29 18:04:35 [A] [???:0] fname:github.com/yunkaiyueming/netburn/server/cron.CronTest1,start_time:2017-06-29 18:04:35
+
+2017/06/29 18:04:35 [A] [???:0] fanme:github.com/yunkaiyueming/netburn/server/cron.CronTest2,end_time:2017-06-29 18:04:35,ret:test2 cron run
+
+2017/06/29 18:04:35 [A] [???:0] fanme:github.com/yunkaiyueming/netburn/server/cron.CronTest1,end_time:2017-06-29 18:04:35,ret:test1 cron run
+
+2017/06/29 18:09:35 [A] [???:0] fname:github.com/yunkaiyueming/netburn/server/cron.CronTest1,start_time:2017-06-29 18:09:35
+
+2017/06/29 18:09:35 [A] [???:0] fanme:github.com/yunkaiyueming/netburn/server/cron.CronTest1,end_time:2017-06-29 18:09:35,ret:test1 cron run
+
+2017/06/29 18:09:35 [A] [???:0] fname:github.com/yunkaiyueming/netburn/server/cron.CronTest3,start_time:2017-06-29 18:09:35
+
+2017/06/29 18:09:35 [A] [???:0] fanme:github.com/yunkaiyueming/netburn/server/cron.CronTest3,end_time:2017-06-29 18:09:35,ret:test3 cron run
+
+2017/06/29 18:14:35 [A] [???:0] fname:github.com/yunkaiyueming/netburn/server/cron.CronTest1,start_time:2017-06-29 18:14:35
+
+2017/06/29 18:14:35 [A] [???:0] fanme:github.com/yunkaiyueming/netburn/server/cron.CronTest1,end_time:2017-06-29 18:14:35,ret:test1 cron run
+
+2017/06/29 18:19:35 [A] [???:0] fname:github.com/yunkaiyueming/netburn/server/cron.CronTest2,start_time:2017-06-29 18:19:35
+
+2017/06/29 18:19:35 [A] [???:0] fanme:github.com/yunkaiyueming/netburn/server/cron.CronTest2,end_time:2017-06-29 18:19:35,ret:test2 cron run
+
+2017/06/29 18:19:35 [A] [???:0] fname:github.com/yunkaiyueming/netburn/server/cron.CronTest1,start_time:2017-06-29 18:19:35
+
+2017/06/29 18:19:35 [A] [???:0] fname:github.com/yunkaiyueming/netburn/server/cron.CronTest3,start_time:2017-06-29 18:19:35
+
+2017/06/29 18:19:35 [A] [???:0] fanme:github.com/yunkaiyueming/netburn/server/cron.CronTest3,end_time:2017-06-29 18:19:35,ret:test3 cron run
+
+2017/06/29 18:19:35 [A] [???:0] fanme:github.com/yunkaiyueming/netburn/server/cron.CronTest1,end_time:2017-06-29 18:19:35,ret:test1 cron run
+
+2017/06/29 18:19:35 [A] [???:0] fname:github.com/yunkaiyueming/netburn/server/cron.CronUserLand,start_time:2017-06-29 18:19:35
+

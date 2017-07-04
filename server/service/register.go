@@ -1,7 +1,6 @@
 package service
 
 import (
-	//"fmt"
 	"net/rpc"
 
 	"github.com/yunkaiyueming/netburn/server/models/cache"

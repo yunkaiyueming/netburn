@@ -11,7 +11,7 @@ import (
 
 func StartWebServer() {
 	router.Router()
-	fmt.Println("web server start:", getWebAddress())
+	fmt.Println("web server start ===> ", getWebAddress())
 	err := http.ListenAndServe(getWebAddress(), nil)
 	if err != nil {
 		log.Fatal("ListenAndServe: ", err)
