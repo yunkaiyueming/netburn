@@ -21,7 +21,7 @@ func flagParse() {
 
 func main() {
 	flagParse()
-	service.StartRpc()
-	service.StartGrpc()
+	go service.StartRpc()
+	go service.StartGrpc()
 	web.StartWebServer()
 }
